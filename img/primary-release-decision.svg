@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="1200" height="860">
+<style>
+text { font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+.title{font-size:24px;font-weight:700;fill:#111827}.subtitle{font-size:13px;fill:#6b7280}.nt{font-size:14px;font-weight:700;fill:#111827}.ns{font-size:12px;fill:#4b5563}.sm{font-size:11px;fill:#6b7280}.lbl{font-size:12px;font-weight:700;fill:#374151}
+</style>
+<defs>
+<marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#2563eb"/></marker>
+<marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#16a34a"/></marker>
+<marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#dc2626"/></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#9333ea"/></marker>
+<marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#ea580c"/></marker>
+<marker id="arrow-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#6b7280"/></marker>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#111827" flood-opacity="0.10"/></filter>
+</defs>
+<rect width="1200" height="860" fill="#ffffff"/>
+<text x="40" y="42" class="title">PrimaryContextRelease &#x51B3;&#x7B56;&#x56FE;</text>
+<text x="40" y="66" class="subtitle">&#x666E;&#x901A; reset &#x517C;&#x5BB9;&#x65E7; retain&#xFF0C;force reset &#x5F3A;&#x5236;&#x8FDB;&#x5165; teardown</text>
+<g filter="url(#shadow)">
+<rect x="500" y="90" width="220" height="58" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+<text x="516" y="116" class="nt">PrimaryContextRelease</text>
+<text x="516" y="138" class="ns">devId, isForceReset</text>
+</g>
+<polygon points="610,167.0 705.0,210 610,253.0 515.0,210" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="610" y="214" text-anchor="middle" class="nt">force reset?</text>
+<g filter="url(#shadow)">
+<rect x="190" y="310" width="210" height="58" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+<text x="206" y="336" class="nt">TryDecRef</text>
+<text x="206" y="358" class="ns">&#x6263; retainCount</text>
+</g>
+<polygon points="295,385.0 400.0,430 295,475.0 190.0,430" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="295" y="434" text-anchor="middle" class="nt">&#x6263;&#x5230; retain?</text>
+<polygon points="170,512.0 300.0,560 170,608.0 40.0,560" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="170" y="564" text-anchor="middle" class="nt">total=1 &#x4E14;&#x5F53;&#x524D;&#x7ED1;&#x5B9A;?</text>
+<g filter="url(#shadow)">
+<rect x="60" y="700" width="220" height="58" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="76" y="726" class="nt">&#x8FD4;&#x56DE;&#x6210;&#x529F;</text>
+<text x="76" y="748" class="ns">&#x4E0D; teardown</text>
+</g>
+<polygon points="435,512.0 550.0,560 435,608.0 320.0,560" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="435" y="564" text-anchor="middle" class="nt">&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;?</text>
+<g filter="url(#shadow)">
+<rect x="650" y="700" width="220" height="58" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+<text x="666" y="726" class="nt">&#x8FDB;&#x5165; teardown</text>
+<text x="666" y="748" class="ns">ACTIVE -&gt; FINALIZING</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="830" y="310" width="230" height="58" rx="10" fill="#faf5ff" stroke="#ddd6fe" stroke-width="1.5"/>
+<text x="846" y="336" class="nt">&#x8BA1;&#x7B97; totalRef</text>
+<text x="846" y="358" class="ns">retain + threadRef</text>
+</g>
+<polygon points="945,387.0 1040.0,430 945,473.0 850.0,430" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="945" y="434" text-anchor="middle" class="nt">total == 0?</text>
+<g filter="url(#shadow)">
+<rect x="940" y="560" width="210" height="58" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+<text x="956" y="586" class="nt">&#x8FD4;&#x56DE;&#x9519;&#x8BEF;</text>
+<text x="956" y="608" class="ns">RT_ERROR_CONTEXT_DEL</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="695" y="560" width="215" height="58" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+<text x="711" y="586" class="nt">&#x6E05;&#x4E24;&#x4E2A;&#x8BA1;&#x6570;</text>
+<text x="711" y="608" class="ns">retain=0, thread=0</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="650" y="790" width="220" height="48" rx="10" fill="#faf5ff" stroke="#ddd6fe" stroke-width="1.5"/>
+<text x="666" y="816" class="nt">NOT_INITIALIZED</text>
+<text x="666" y="838" class="ns">&#x5BF9;&#x8C61;&#x4FDD;&#x7559;&#xFF0C;&#x7B49; SetDevice</text>
+</g>
+<path d="M610,148 L610,167" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<path d="M515,210 L295,210 L295,310" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<rect x="388" y="184" width="54" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="415.0" y="198" text-anchor="middle" class="sm">false</text>
+<path d="M705,210 L945,210 L945,310" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+<rect x="798" y="184" width="50" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="823.0" y="198" text-anchor="middle" class="sm">true</text>
+<path d="M295,368 L295,385" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<path d="M220,430 L170,430 L170,512" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<rect x="174" y="405" width="44" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="196.0" y="419" text-anchor="middle" class="sm">&#x5426;</text>
+<path d="M370,430 L435,430 L435,512" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<rect x="392" y="405" width="44" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="414.0" y="419" text-anchor="middle" class="sm">&#x662F;</text>
+<path d="M170,608 L170,700" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow-gray)"/>
+<rect x="190" y="636" width="44" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="212.0" y="650" text-anchor="middle" class="sm">&#x5426;</text>
+<path d="M295,560 L325,560 L325,730 L650,730" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<rect x="318" y="561" width="44" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="340.0" y="575" text-anchor="middle" class="sm">&#x662F;</text>
+<path d="M435,608 L435,729 L280,729" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow-gray)"/>
+<rect x="455" y="636" width="44" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="477.0" y="650" text-anchor="middle" class="sm">&#x662F;</text>
+<path d="M545,560 L650,720" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<rect x="570" y="596" width="44" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="592.0" y="610" text-anchor="middle" class="sm">&#x5426;</text>
+<path d="M945,368 L945,385" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+<path d="M945,473 L945,560" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+<rect x="965" y="496" width="44" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="987.0" y="510" text-anchor="middle" class="sm">&#x662F;</text>
+<path d="M850,430 L802,430 L802,560" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+<rect x="810" y="405" width="44" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="832.0" y="419" text-anchor="middle" class="sm">&#x5426;</text>
+<path d="M802,618 L760,700" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+<path d="M760,758 L760,790" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+</svg>
