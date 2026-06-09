@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760">
+<style>
+text { font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+.title{font-size:24px;font-weight:700;fill:#111827}.subtitle{font-size:13px;fill:#6b7280}.nt{font-size:14px;font-weight:700;fill:#111827}.ns{font-size:12px;fill:#4b5563}.sm{font-size:11px;fill:#6b7280}.lbl{font-size:12px;font-weight:700;fill:#374151}
+</style>
+<defs>
+<marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#2563eb"/></marker>
+<marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#16a34a"/></marker>
+<marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#dc2626"/></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#9333ea"/></marker>
+<marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#ea580c"/></marker>
+<marker id="arrow-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#6b7280"/></marker>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#111827" flood-opacity="0.10"/></filter>
+</defs>
+<rect width="1200" height="760" fill="#ffffff"/>
+<text x="40" y="42" class="title">Context &#x9632; UAF &#x91CD;&#x6784;&#x603B;&#x89C8;</text>
+<text x="40" y="66" class="subtitle">Primary &#x4FDD;&#x7559; retain &#x517C;&#x5BB9;&#x8BA1;&#x6570;&#xFF0C;&#x666E;&#x901A; Context &#x4F9D;&#x9760;&#x7EBF;&#x7A0B;&#x7ED1;&#x5B9A;&#x8BA1;&#x6570;&#x5EF6;&#x8FDF;&#x5220;&#x9664;</text>
+<rect x="40" y="95" width="260" height="230" rx="14" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="7,5"/>
+<text x="56" y="120" class="lbl">&#x7528;&#x6237; API &#x5165;&#x53E3;</text>
+<rect x="340" y="95" width="260" height="230" rx="14" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5" stroke-dasharray="7,5"/>
+<text x="356" y="120" class="lbl">&#x7EBF;&#x7A0B;&#x672C;&#x5730; TLS</text>
+<rect x="650" y="95" width="500" height="230" rx="14" fill="#faf5ff" stroke="#c4b5fd" stroke-width="1.5" stroke-dasharray="7,5"/>
+<text x="666" y="120" class="lbl">Primary Context &#x53CC;&#x8BA1;&#x6570;</text>
+<rect x="340" y="390" width="360" height="220" rx="14" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5" stroke-dasharray="7,5"/>
+<text x="356" y="415" class="lbl">&#x666E;&#x901A; Context</text>
+<rect x="760" y="390" width="390" height="220" rx="14" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="7,5"/>
+<text x="776" y="415" class="lbl">&#x904D;&#x5386;&#x4E0E;&#x5185;&#x90E8;&#x7EBF;&#x7A0B;</text>
+<g filter="url(#shadow)">
+<rect x="70" y="142" width="200" height="64" rx="10" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.5"/>
+<text x="86" y="168" class="nt">SetDevice</text>
+<text x="86" y="190" class="ns">&#x521D;&#x59CB;&#x5316;&#x6216;&#x590D;&#x7528; primary</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="70" y="232" width="200" height="64" rx="10" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.5"/>
+<text x="86" y="258" class="nt">Reset / Force</text>
+<text x="86" y="280" class="ns">&#x91CA;&#x653E; retain &#x6216;&#x5F3A;&#x5236; reset</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="370" y="142" width="200" height="64" rx="10" fill="#ffffff" stroke="#bbf7d0" stroke-width="1.5"/>
+<text x="386" y="168" class="nt">curRef_</text>
+<text x="386" y="190" class="ns">SetDevice &#x7ED1;&#x5B9A; slot</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="370" y="232" width="200" height="64" rx="10" fill="#ffffff" stroke="#bbf7d0" stroke-width="1.5"/>
+<text x="386" y="258" class="nt">curCtx_</text>
+<text x="386" y="280" class="ns">SetCurrentContext &#x7ED1;&#x5B9A;&#x6307;&#x9488;</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="680" y="142" width="200" height="64" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.5"/>
+<text x="696" y="168" class="nt">RefObject count</text>
+<text x="696" y="190" class="ns">&#x65E7; retain &#x517C;&#x5BB9;&#x8BA1;&#x6570;</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="915" y="142" width="200" height="64" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.5"/>
+<text x="931" y="168" class="nt">threadRefCount_</text>
+<text x="931" y="190" class="ns">&#x771F;&#x5B9E;&#x7EBF;&#x7A0B;&#x7ED1;&#x5B9A;&#x8BA1;&#x6570;</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="795" y="240" width="220" height="64" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.5"/>
+<text x="811" y="266" class="nt">ContextState</text>
+<text x="811" y="288" class="ns">ACTIVE / FINALIZING / NOT_INITIALIZED</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="370" y="450" width="240" height="64" rx="10" fill="#ffffff" stroke="#fed7aa" stroke-width="1.5"/>
+<text x="386" y="476" class="nt">needDelete + threadRef</text>
+<text x="386" y="498" class="ns">&#x7EBF;&#x7A0B;&#x89E3;&#x7ED1;&#x540E; TryDelete</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="790" y="450" width="150" height="64" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="806" y="476" class="nt">Snapshot</text>
+<text x="806" y="498" class="ns">&#x53EA;&#x5904;&#x7406; ACTIVE</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="970" y="450" width="150" height="64" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="986" y="476" class="nt">Async recycle</text>
+<text x="986" y="498" class="ns">internalAccess</text>
+</g>
+<path d="M270,174 L370,174" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<rect x="294" y="150" width="76" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="332.0" y="164" text-anchor="middle" class="sm">&#x7ED1;&#x5B9A; slot</text>
+<path d="M270,264 L320,264 L320,174 L370,174" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<path d="M570,174 L680,174" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+<rect x="590" y="150" width="72" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="626.0" y="164" text-anchor="middle" class="sm">retain++</text>
+<path d="M570,264 L915,174" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+<rect x="700" y="201" width="60" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="730.0" y="215" text-anchor="middle" class="sm">bind++</text>
+<path d="M170,296 L170,360 L905,360 L905,304" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+<rect x="500" y="336" width="86" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="543.0" y="350" text-anchor="middle" class="sm">reset &#x5224;&#x65AD;</text>
+<path d="M490,296 L490,450" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+<rect x="505" y="356" width="82" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="546.0" y="370" text-anchor="middle" class="sm">&#x5207;&#x6362;&#x7ED1;&#x5B9A;</text>
+<path d="M790,482 L610,482" fill="none" stroke="#6b7280" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrow-gray)"/>
+<path d="M970,482 L905,304" fill="none" stroke="#6b7280" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrow-gray)"/>
+</svg>
