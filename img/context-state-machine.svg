@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720">
+<style>
+text { font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+.title{font-size:24px;font-weight:700;fill:#111827}.subtitle{font-size:13px;fill:#6b7280}.nt{font-size:14px;font-weight:700;fill:#111827}.ns{font-size:12px;fill:#4b5563}.sm{font-size:11px;fill:#6b7280}.lbl{font-size:12px;font-weight:700;fill:#374151}
+</style>
+<defs>
+<marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#2563eb"/></marker>
+<marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#16a34a"/></marker>
+<marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#dc2626"/></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#9333ea"/></marker>
+<marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#ea580c"/></marker>
+<marker id="arrow-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#6b7280"/></marker>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#111827" flood-opacity="0.10"/></filter>
+</defs>
+<rect width="1200" height="720" fill="#ffffff"/>
+<text x="40" y="42" class="title">Context &#x751F;&#x547D;&#x5468;&#x671F;&#x72B6;&#x6001;&#x673A;</text>
+<text x="40" y="66" class="subtitle">USER &#x53EA;&#x8BBF;&#x95EE; ACTIVE&#xFF0C;INTERNAL &#x53EF;&#x5728;&#x521D;&#x59CB;&#x5316;&#x548C; teardown &#x4E2D;&#x4E34;&#x65F6;&#x8BBF;&#x95EE;</text>
+<g filter="url(#shadow)">
+<rect x="80" y="145" width="210" height="76" rx="10" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="96" y="171" class="nt">NOT_INITIALIZED</text>
+<text x="96" y="193" class="ns">&#x8D44;&#x6E90;&#x5DF2;&#x91CA;&#x653E;</text>
+<text x="96" y="210" class="ns">primary &#x5BF9;&#x8C61;&#x5E38;&#x9A7B;</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="370" y="145" width="210" height="76" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+<text x="386" y="171" class="nt">INITIALIZING</text>
+<text x="386" y="193" class="ns">Setup &#x8FDB;&#x884C;&#x4E2D;</text>
+<text x="386" y="210" class="ns">&#x4EC5; internal &#x8BBF;&#x95EE;</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="660" y="145" width="210" height="76" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+<text x="676" y="171" class="nt">ACTIVE</text>
+<text x="676" y="193" class="ns">&#x7528;&#x6237; API &#x53EF;&#x8BBF;&#x95EE;</text>
+<text x="676" y="210" class="ns">threadRefCount &#x751F;&#x6548;</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="660" y="370" width="210" height="76" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+<text x="676" y="396" class="nt">FINALIZING</text>
+<text x="676" y="418" class="ns">teardown &#x8FDB;&#x884C;&#x4E2D;</text>
+<text x="676" y="435" class="ns">&#x7528;&#x6237; API &#x62D2;&#x7EDD;</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="370" y="370" width="210" height="76" rx="10" fill="#faf5ff" stroke="#ddd6fe" stroke-width="1.5"/>
+<text x="386" y="396" class="nt">FINALIZED</text>
+<text x="386" y="418" class="ns">teardown &#x4E3B;&#x6D41;&#x7A0B;&#x5B8C;&#x6210;</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="80" y="370" width="210" height="76" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+<text x="96" y="396" class="nt">DEINITIALIZING</text>
+<text x="96" y="418" class="ns">&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x5B57;&#x6BB5;</text>
+<text x="96" y="435" class="ns">device/module/stream</text>
+</g>
+<path d="M290,183 L370,183" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<rect x="304" y="158" width="92" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="350.0" y="172" text-anchor="middle" class="sm">Setup Begin</text>
+<path d="M580,183 L660,183" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+<rect x="598" y="158" width="78" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="637.0" y="172" text-anchor="middle" class="sm">Setup OK</text>
+<path d="M765,221 L765,370" fill="none" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow-orange)"/>
+<rect x="785" y="276" width="100" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="835.0" y="290" text-anchor="middle" class="sm">Reset/Destroy</text>
+<path d="M660,408 L580,408" fill="none" stroke="#9333ea" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<rect x="590" y="383" width="70" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="625.0" y="397" text-anchor="middle" class="sm">SUCCESS</text>
+<path d="M370,408 L290,408" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+<rect x="300" y="383" width="64" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="332.0" y="397" text-anchor="middle" class="sm">Release</text>
+<path d="M185,370 L185,221" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+<rect x="205" y="276" width="54" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="232.0" y="290" text-anchor="middle" class="sm">Done</text>
+<path d="M185,145 C185,78 730,78 765,145" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+<rect x="425" y="62" width="150" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="500.0" y="76" text-anchor="middle" class="sm">Primary SetDevice reinit</text>
+<path d="M870,370 C1040,350 1040,235 870,221" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+<rect x="970" y="272" width="116" height="20" rx="5" fill="#ffffff" opacity="0.96" stroke="#e5e7eb"/>
+<text x="1028.0" y="286" text-anchor="middle" class="sm">TearDown ERROR</text>
+<rect x="930" y="120" width="230" height="370" rx="14" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="7,5"/>
+<text x="946" y="145" class="lbl">&#x8BBF;&#x95EE;&#x89C4;&#x5219;</text>
+<g filter="url(#shadow)">
+<rect x="960" y="170" width="170" height="58" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+<text x="976" y="196" class="nt">USER API</text>
+<text x="976" y="218" class="ns">&#x53EA;&#x5141;&#x8BB8; ACTIVE</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="960" y="265" width="170" height="58" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+<text x="976" y="291" class="nt">INTERNAL</text>
+<text x="976" y="313" class="ns">ACTIVE / INIT / FINALIZING</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="960" y="360" width="170" height="58" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+<text x="976" y="386" class="nt">&#x5931;&#x6548; TLS</text>
+<text x="976" y="408" class="ns">&#x7528;&#x6237;&#x6001;&#x987A;&#x624B;&#x6E05;&#x7406;</text>
+</g>
+<path d="M930,199 L870,183" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+<path d="M930,294 L870,408" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrow-green)"/>
+<path d="M930,389 L765,446" fill="none" stroke="#ea580c" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrow-orange)"/>
+</svg>
